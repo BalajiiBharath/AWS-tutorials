@@ -1,0 +1,22 @@
+1) create vpc
+ 
+2)create 4 subnets {2public subnets (ZONE A,B) , (2 private subnet (ZONE A,B)} 
+
+3)internet gateway >> attach vpc
+
+4)create 2 routetable {public RT (igw) , private RT (NAT)} We want NAt gateway for private subnets
+
+5)create 2 EC2 instances for private ZONE A,B (userdata) 
+
+6)create loadbalancer >> ALB >> internal means private
+
+7)create 2 Target group for alb internal loadbalancer
+
+8)attach to alb 
+
+9)create Network LoadBalancer >> internet facing >> target group is alb 
+
+10) Create another target group for NLB (direct mapping)
+
+11)attach with NLB (port 81)
+

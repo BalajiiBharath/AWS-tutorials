@@ -1,0 +1,10 @@
+aws linux webserver 
+
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+systemctl enable httpd
+systemctl start httpd
+cd /var/www/html
+echo "hello linux world" > /var/www/html/index.html

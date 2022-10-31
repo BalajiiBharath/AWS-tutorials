@@ -8,3 +8,4 @@ systemctl enable httpd
 systemctl start httpd
 cd /var/www/html
 echo "hello linux world" > /var/www/html/index.html
+systemctl restart httpd

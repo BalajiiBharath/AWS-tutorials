@@ -18,5 +18,5 @@
 
 10) Create another target group for NLB (direct mapping)
 
-11)attach with NLB (port 81)
+11)attach with NLB (port 81)11
 
